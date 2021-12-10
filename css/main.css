@@ -22,18 +22,21 @@ TABLE OF CONTENTS
 /* ==========================================================================
     01. General and Typography
 ========================================================================== */
-body {
+* {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     -webkit-font-smoothing:antialiased;
     -webkit-text-size-adjust:100%;
-}
-
-/* Snowflakes Styles */
-body {
+    margin: 0;
+    border-collapse: collapse;
+  
+  }
+  
+  /* Snowflakes Styles */
+  body {
    position: relative;
-}
-
-body:before {
+  }
+  
+  body:before {
    content: '';
    display: block;
    position: absolute;
@@ -45,51 +48,51 @@ body:before {
    pointer-events: none;
    background-image: url('https://s3.amazonaws.com/divi-life-plugin-layouts/tutorials/snow/divi-life-snowflakes-b.png'), url('https://s3.amazonaws.com/divi-life-plugin-layouts/tutorials/snow/divi-life-snowflakes-c.png'), url('https://s3.amazonaws.com/divi-life-plugin-layouts/tutorials/snow/divi-life-snowflakes-a-1.png');
     animation: divi-life-snow 10s linear infinite;
-}
-@keyframes divi-life-snow {
- 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
- 50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
- 100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-}
-
-@-moz-keyframes divi-life-snow {
- 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
- 50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
- 100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-}
-
-@-webkit-keyframes divi-life-snow {
- 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
- 50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
- 100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-}
-
-@-ms-keyframes divi-life-snow {
- 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
- 50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
- 100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-}
-
-img {
+  }
+  @keyframes divi-life-snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  }
+  
+  @-moz-keyframes divi-life-snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  }
+  
+  @-webkit-keyframes divi-life-snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  }
+  
+  @-ms-keyframes divi-life-snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  }
+  
+  img {
     max-height:100%;
     max-width:100%;
-}
-section {
+  }
+  section {
     position:relative;
     padding:0;
     background:#F0A830;
     color:#FFF;
     text-align:center;
-}
-section::before,section::after {
+  }
+  section::before,section::after {
     position:absolute;
     content: '';
-}
-/* End of Snowflakes Styles */
-
-
-/* Separators Styles */
-.ss-style-top::before {
+  }
+  /* End of Snowflakes Styles */
+  
+  
+  /* Separators Styles */
+  .ss-style-top::before {
     left:0;
     width:100%;
     height:30px;
@@ -101,8 +104,8 @@ section::before,section::after {
     background-image:(315deg,#FFF 50%,transparent 50%),linear-gradient(45deg,#FFF 50%,transparent 50%);
     margin-top:-30px;
     z-index:100;
-}
-.ss-style-bottom::before {
+  }
+  .ss-style-bottom::before {
     left:0;
     width:100%;
     height:30px;
@@ -114,18 +117,18 @@ section::before,section::after {
     background-image:(583deg,#FFF 50%,transparent 50%),linear-gradient(136deg,#FFF 50%,transparent 50%);
     margin-top:0px;
     z-index: 100;
-}
-
-.header-content--find-us {
+  }
+  
+  .header-content--find-us {
     background: url(../img/find12.jpeg) center;
     background-size: cover;
     height: 1650px;
-}
-
-/* ==========================================================================
+  }
+  
+  /* ==========================================================================
     02. Header
-========================================================================== */
-#header {
+  ========================================================================== */
+  #header {
     background-image:url(../img/b5.jpeg);
     -webkit-background-size:/*@@prefixmycss->No equivalent*/;
     -moz-background-size:cover;
@@ -135,8 +138,8 @@ section::before,section::after {
     background-attachment:fixed;
     background-repeat:no-repeat;
     position:relative;
-}
-.bg-overlay {
+  }
+  .bg-overlay {
     position:absolute;
     top:0;
     left:0;
@@ -144,110 +147,110 @@ section::before,section::after {
     bottom:0;
     background:rgba(44,33,5,0.2);
     z-index:0;
-}
-#header .center {
+  }
+  #header .center {
     position:relative;
     z-index:1;
     color:white;
-}
-#header .bottom {
+  }
+  #header .bottom {
     color:white;
-}
-#header .center .slogan {
+  }
+  #header .center .slogan {
     font-size:26px;
     text-transform:uppercase;
-}
-#header .banner h1 {
+  }
+  #header .banner h1 {
     font-size:100px;
     color:white;
     text-transform:uppercase;
     font-weight:bold;
     display:inline-block;
     padding:0px 18px;
-}
-#header .subtitle h4 {
+  }
+  #header .subtitle h4 {
     display:inline-block;
     color:white;
     font-size:38px;
     padding:0px 15px;
-}
-#header .bottom {
+  }
+  #header .bottom {
     text-align:center;
     width:100%;
     position:absolute;
     bottom:30px;
-}
-#header .bottom a {
+  }
+  #header .bottom a {
     font-size:36px;
     color:whitesmoke;
     position:relative;
     top:-5px;
-}
-.navbar-nav>li:nth-child(3) {
+  }
+  .navbar-nav>li:nth-child(3) {
     margin-right: 300px;
-}
-
-
-/* ==========================================================================
+  }
+  
+  
+  /* ==========================================================================
     03. Navigation
-========================================================================== */
-#menu {
+  ========================================================================== */
+  #menu {
     background:rgba(33,45,57,0.8);
     margin-bottom:0;
-}
-.navbar-brand h2 {
+  }
+  .navbar-brand h2 {
     margin-top:0;
     font-weight:bold;
     color:white;
-}
-.navbar-brand {
+  }
+  .navbar-brand {
     padding-top:8px;
     padding-bottom:0;
-}
-.navbar-inverse .navbar-nav>li>a {
+  }
+  .navbar-inverse .navbar-nav>li>a {
     -webkit-transition:all 0.4s;
     -moz-transition:all 0.4s;
     -o-transition:all 0.4s;
     transition:all 0.4s;
     color:white;
     font-weight:bold;
-}
-.navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>.active>a {
+  }
+  .navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>.active>a {
     background:#830e10;
     color:white;
     text-shadow:none;
-}
-
-.navbar-inner {
+  }
+  
+  .navbar-inner {
   display:block !important;
   width:135px;
   left:50%;
   margin-left:250px;
   color: #1f3102;
-}
-
-
-/* ==========================================================================
+  }
+  
+  
+  /* ==========================================================================
     04. Services
-========================================================================== */
-.light-wrapper {
+  ========================================================================== */
+  .light-wrapper {
     background:#fbfbfb;
-}
-.inner {
+  }
+  .inner {
     padding-top:100px;
     padding-bottom:100px;
-}
-.section-title {
+  }
+  .section-title {
     font-size:36px;
     line-height:40px;
     text-transform:uppercase;
     margin-bottom:15px;
     font-weight:600;
-}
-.main.lead {
+  }
+  .main.lead {
     margin-bottom:80px;
-}
-.lead {
+  }
+  .lead {
     font-size:17px;
     line-height:24px;
     font-weight:normal;
@@ -255,8 +258,8 @@ section::before,section::after {
     margin-bottom:15px;
     color:#2e2e2e;
     position:relative;
-}
-.lead:after {
+  }
+  .lead:after {
     position:absolute;
     content:' ';
     background:#ed0121;
@@ -265,21 +268,21 @@ section::before,section::after {
     bottom:-22px;
     left:50%;
     margin-left:-40px;
-}
-.story .col-wrapper {
+  }
+  .story .col-wrapper {
     padding:0 10px;
-}
-.story .icon-wrapper {
+  }
+  .story .icon-wrapper {
     position:relative;
     height:80px;
     margin-top: 40px;
-}
-
-
-/* ==========================================================================
+  }
+  
+  
+  /* ==========================================================================
     05. parallax
-========================================================================== */
-.parallax {
+  ========================================================================== */
+  .parallax {
     background:url(../img/w1.jpeg) fixed no-repeat center center;
     -webkit-background-size:/*@@prefixmycss->No equivalent*/;
     -moz-background-size:cover;
@@ -287,58 +290,58 @@ section::before,section::after {
     background-size:cover;
     position:relative;
     color:#FFF;
-}
-.parallax .inner {
+  }
+  .parallax .inner {
     padding-top:130px;
     padding-bottom:130px;
-}
-.parallax.parallax2 {
+  }
+  .parallax.parallax2 {
     background-image:url(../img/b3.jpeg);
-}
-.bm10 {
+  }
+  .bm10 {
     margin-bottom:10px !important;
-}
-.facts h4 {
+  }
+  .facts h4 {
     font-size:40px;
     margin-bottom:20px;
-}
-.parallax h1,.parallax h2,.parallax h3,.parallax h4,.parallax h5,.parallax h6 {
+  }
+  .parallax h1,.parallax h2,.parallax h3,.parallax h4,.parallax h5,.parallax h6 {
     color:#fff;
-}
-.facts p {
+  }
+  .facts p {
     font-size:16px;
     text-transform:uppercase;
     margin:0;
-}
-.story .icon-wrapper i {
+  }
+  .story .icon-wrapper i {
     font-size:70px;
-}
-.facts i {
+  }
+  .facts i {
     font-size: 70px;
-}
-
-
-/* ==========================================================================
+  }
+  
+  
+  /* ==========================================================================
     06. Food menu
-========================================================================== */
-.menu-items {
+  ========================================================================== */
+  .menu-items {
     text-align:center;
     margin:0 auto;
-}
-.menu-titles h1 {
+  }
+  .menu-titles h1 {
     text-shadow:none;
     color:#1f3102;
     text-align:center;
     margin:0 auto;
     padding-top:30px;
     padding-bottom:15px;
-}
-#food-menu ul {
+  }
+  #food-menu ul {
     margin:0;
     padding:0;
     list-style:none;
-}
-.menu-images img {
+  }
+  .menu-images img {
     -webkit-border-radius:10px;
     -moz-border-radius:10px;
     border-radius:10px;
@@ -346,13 +349,13 @@ section::before,section::after {
     display:block;
     margin:auto;
     margin-top: 40px;
-}
-
-
-/* ==========================================================================
+  }
+  
+  
+  /* ==========================================================================
     07. Special offers
-========================================================================== */
-.hot-tag {
+  ========================================================================== */
+  .hot-tag {
     position:absolute;
     bottom:0;
     right:0;
@@ -367,52 +370,52 @@ section::before,section::after {
     -webkit-border-radius:100px;
     -moz-border-radius:100px;
     border-radius:100px;
-}
-.br-red {
+  }
+  .br-red {
     background-color:#ed0121 !important;
-}
-.br-lblue {
+  }
+  .br-lblue {
     background-color:#32c8de !important;
-}
-.br-green {
+  }
+  .br-green {
     background-color:#51d466 !important;
-}
-.pricing {
+  }
+  .pricing {
     border-top:1px solid #f1f1f1;
-}
-.pricing .pricing-item {
+  }
+  .pricing .pricing-item {
     position:relative;
     margin-top:40px;
     margin-bottom:10px;
-}
-.pricing .pricing-item img {
+  }
+  .pricing .pricing-item img {
     max-width:250px;
     float:left;
-}
-.pricing-item-details a,.pricing-item-details p,.pricing .lead {
+  }
+  .pricing-item-details a,.pricing-item-details p,.pricing .lead {
     color:white;
     font-weight:bold;
-}
-.pricing .pricing-item .pricing-item-details {
+  }
+  .pricing .pricing-item .pricing-item-details {
     margin-left:265px;
-}
-.pricing .pricing-item .pricing-item-details h3 {
+  }
+  .pricing .pricing-item .pricing-item-details h3 {
     margin-top:0;
     margin-bottom:8px;
     font-size:22px;
-}
-.pricing .pricing-item .pricing-item-details p {
-}
-.pricing .pricing-item .pricing-item-details a.btn {
+  }
+  .pricing .pricing-item .pricing-item-details p {
+  }
+  .pricing .pricing-item .pricing-item-details a.btn {
     margin-top:10px;
-}
-.pricing .pricing-item .pricing-item-details a.view-link {
+  }
+  .pricing .pricing-item .pricing-item-details a.view-link {
     display:inline-block;
     margin-top:7px;
     font-size:12px;
     border-bottom:1px dotted #aeaeae;
-}
-.pricing .pricing-item .hot-tag {
+  }
+  .pricing .pricing-item .hot-tag {
     top:0;
     left:0;
     margin-top:-15px;
@@ -423,20 +426,20 @@ section::before,section::after {
     font-size:23px;
     font-weight:700;
     border: 4px solid white;
-}
-
-
-/* ==========================================================================
+  }
+  
+  
+  /* ==========================================================================
     08. Reservation
-========================================================================== */
-.form-group {
+  ========================================================================== */
+  .form-group {
     margin-bottom:24px;
-}
-.form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control {
+  }
+  .form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control {
     cursor:not-allowed;
     background-color: transparent;
-}
-.form-control {
+  }
+  .form-control {
     height:38px;
     font-size:14px;
     vertical-align:middle;
@@ -452,40 +455,40 @@ section::before,section::after {
     -moz-transition:none !important;
     -o-transition:none !important;
     transition:none !important;
-}
-
-.form p {
+  }
+  
+  .form p {
     margin: 10px 0 30px 0;
-}
-
-
-/* ==========================================================================
+  }
+  
+  
+  /* ==========================================================================
     09. Chefs
-========================================================================== */
-.chefs img {
+  ========================================================================== */
+  .chefs img {
     border:5px solid #e7e7e7;
     width: 80%;
     height: 300px;
-}
-
-
-/* ==========================================================================
+  }
+  
+  
+  /* ==========================================================================
     10. Footer
-========================================================================== */
-.dark-wrapper {
+  ========================================================================== */
+  .dark-wrapper {
     background:#1f3102;
     color:white;
     font-size:20px;
     font-weight:bold;
     font-style: bold;
-}
-
-.social-bar {
+  }
+  
+  .social-bar {
     width:100%;
     text-align:right;
-}
-
-.social-bar a {
+  }
+  
+  .social-bar a {
     display:inline-block;
     margin-right:11px;
     font-size:2.15em;
@@ -497,36 +500,36 @@ section::before,section::after {
     -moz-transition:opacity 350ms ease;
     -o-transition:opacity 350ms ease;
     transition:opacity 350ms ease;
-}
-
-.social-bar a:hover {
+  }
+  
+  .social-bar a:hover {
     opacity:0.5;
     filter: alpha(opacity=50);
-}
-
-.copyright p{
+  }
+  
+  .copyright p{
   display: contents;
   text-align: center;
   float: left;
-
-}
-
-/* ==========================================================================
+  
+  }
+  
+  /* ==========================================================================
     11. Responsive styles
-========================================================================== */
-
-@media (max-width: 991px){
+  ========================================================================== */
+  
+  @media (max-width: 991px){
     .pricing .pricing-item .pricing-item-details {
         margin-left: 0;
     }
-
+  
     .pricing .pricing-item a img {
         float: none;
         margin-bottom: 30px;
     }
-}
-
-@media (min-width:768px) {
+  }
+  
+  @media (min-width:768px) {
     .navbar-nav {
         float:none !important;
         width:100%;
@@ -539,6 +542,7 @@ section::before,section::after {
     }
     #logo {
         position:absolute;
+        z-index: 1;
         display:block !important;
         width:135px;
         left:50%;
@@ -549,9 +553,9 @@ section::before,section::after {
         border-radius:0 0 100% 100%;
         padding: 1px;
     }
-}
-
-@media (max-width:767px) {
+  }
+  
+  @media (max-width:767px) {
     #header .banner h1 {
         font-size:60px;
     }
@@ -562,4 +566,22 @@ section::before,section::after {
         text-align: left;
         margin-top: 30px;
     }
-}
+  }
+  
+  /* ==========================================================================
+    Events Page
+  ========================================================================== */
+  
+  .page4_container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .page4_title h1 {
+    font-size: 90px;
+    text-align: center;
+    padding: 140px 0px 0px;
+
+  }
+  
