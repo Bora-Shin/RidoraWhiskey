@@ -28,6 +28,7 @@ TABLE OF CONTENTS
     -webkit-text-size-adjust:100%;
     margin: 0;
     border-collapse: collapse;
+    
   
   }
   
@@ -572,16 +573,69 @@ TABLE OF CONTENTS
     Events Page
   ========================================================================== */
   
-  .page4_container {
+  #page4_container {
     display: flex;
     flex-direction: column;
-  }
-  
-  
-  .page4_title h1 {
-    font-size: 90px;
-    text-align: center;
-    padding: 140px 0px 0px;
 
   }
   
+  
+  #page4_title h1 {
+    font-size: 90px;
+    text-align: center;
+    padding: 140px 0px 30px;
+    color: black;
+
+  }
+
+#page4_img_row{
+    background-color: #303a43;
+    width: 100%;
+    height: 500px;
+    content: "";
+    margin-top: 250px;
+}
+
+
+#sketch{
+    width: 300px;
+    height: 300px;
+}
+
+#page4_contents{
+    flex-direction: row;
+    z-index: 1;
+}
+
+#page4_img_right{
+    text-align: center;
+    color: #e9e5e1;
+    font-size: 25px;
+    margin-right: 80px;
+    float: right;
+    width: 400px;
+    z-index: 0;
+ 
+}
+
+  #page4_img_left{
+    background: url(../events.jpg) no-repeat;
+    background-size: 150%;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    margin-left: 120px;
+    margin-top: 100px;
+    top: 300px;
+    max-width: unset;
+  }
+
+  #page4_img_left h3 {
+      font-size: 70px;
+      color: #e9e5e1;
+      position: relative;
+      line-height: 90px;
+      left: -15%;
+      top: 35%;
+  }
