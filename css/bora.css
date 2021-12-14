@@ -1,0 +1,667 @@
+/*
+Website Name: Ridora Whiskey
+Version:    1.0
+Author:     Roeder, Rich, Bora
+
+
+TABLE OF CONTENTS
+    01 - General and Typography
+    02 - Header
+    03 - Navigation
+    04 - Services
+    05 - Parallax
+    06 - Ridora Awards
+    07 - Special offers
+    08 - Reservation
+    09 - Ridora Team
+    10 - Footer
+    11 - Responsive styles
+*/
+
+
+/* ==========================================================================
+    01. General and Typography
+========================================================================== */
+* {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -webkit-text-size-adjust:100%;
+  }
+  
+  /* Snowflakes Styles */
+  body {
+   position: relative;
+  }
+  
+  body:before {
+   content: '';
+   display: block;
+   position: absolute;
+   z-index: 2;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   pointer-events: none;
+   background-image: url('https://s3.amazonaws.com/divi-life-plugin-layouts/tutorials/snow/divi-life-snowflakes-b.png'), url('https://s3.amazonaws.com/divi-life-plugin-layouts/tutorials/snow/divi-life-snowflakes-c.png'), url('https://s3.amazonaws.com/divi-life-plugin-layouts/tutorials/snow/divi-life-snowflakes-a-1.png');
+    animation: divi-life-snow 10s linear infinite;
+  }
+  @keyframes divi-life-snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  }
+  
+  @-moz-keyframes divi-life-snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  }
+  
+  @-webkit-keyframes divi-life-snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  }
+  
+  @-ms-keyframes divi-life-snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+  }
+  
+  img {
+    max-height:100%;
+    max-width:100%;
+  }
+
+  
+  section::before,section::after {
+    position:absolute;
+    content: '';
+  }
+  /* End of Snowflakes Styles */
+  
+  
+  /* Separators Styles */
+  .ss-style-top::before {
+    left:0;
+    width:100%;
+    height:30px;
+    -webkit-background-size:25px 100%;
+    -moz-background-size:25px 100%;
+    -o-background-size:25px 100%;
+    background-size:25px 100%;
+    top:0;
+    background-image:(315deg,#FFF 50%,transparent 50%),linear-gradient(45deg,#FFF 50%,transparent 50%);
+    margin-top:-30px;
+    z-index:100;
+  }
+  .ss-style-bottom::before {
+    left:0;
+    width:100%;
+    height:30px;
+    -webkit-background-size:25px 100%;
+    -moz-background-size:25px 100%;
+    -o-background-size:25px 100%;
+    background-size:25px 100%;
+    top:0;
+    background-image:(583deg,#FFF 50%,transparent 50%),linear-gradient(136deg,#FFF 50%,transparent 50%);
+    margin-top:0px;
+    z-index: 100;
+  }
+  
+  .header-content--find-us {
+    background: url(../img/find12.jpeg) center;
+    background-size: cover;
+    height: 1650px;
+  }
+  
+  /* ==========================================================================
+    02. Header
+  ========================================================================== */
+  #header {
+    background-image:url(../img/b5.jpeg);
+    -webkit-background-size:/*@@prefixmycss->No equivalent*/;
+    -moz-background-size:cover;
+    -o-background-size:/*@@prefixmycss->No equivalent*/;
+    background-size:cover;
+    background-position:center center;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    position:relative;
+  }
+  .bg-overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    background:rgba(44,33,5,0.2);
+    z-index:0;
+  }
+  #header .center {
+    position:relative;
+    z-index:1;
+    color:white;
+  }
+  #header .bottom {
+    color:white;
+  }
+  #header .center .slogan {
+    font-size:26px;
+    text-transform:uppercase;
+  }
+  #header .banner h1 {
+    font-size:100px;
+    color:white;
+    text-transform:uppercase;
+    font-weight:bold;
+    display:inline-block;
+    padding:0px 18px;
+  }
+  #header .subtitle h4 {
+    display:inline-block;
+    color:white;
+    font-size:38px;
+    padding:0px 15px;
+  }
+  #header .bottom {
+    text-align:center;
+    width:100%;
+    position:absolute;
+    bottom:30px;
+  }
+  #header .bottom a {
+    font-size:36px;
+    color:whitesmoke;
+    position:relative;
+    top:-5px;
+  }
+  .navbar-nav>li:nth-child(3) {
+    margin-right: 300px;
+  }
+  
+  
+  /* ==========================================================================
+    03. Navigation
+  ========================================================================== */
+  #menu {
+    background:rgba(33,45,57,0.8);
+    margin-bottom:0;
+  }
+  .navbar-brand h2 {
+    margin-top:0;
+    font-weight:bold;
+    color:white;
+  }
+  .navbar-brand {
+    padding-top:8px;
+    padding-bottom:0;
+  }
+  .navbar-inverse .navbar-nav>li>a {
+    -webkit-transition:all 0.4s;
+    -moz-transition:all 0.4s;
+    -o-transition:all 0.4s;
+    transition:all 0.4s;
+    color:white;
+    font-weight:bold;
+  }
+  .navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>.active>a {
+    background:#830e10;
+    color:white;
+    text-shadow:none;
+  }
+  
+  .navbar-inner {
+  display:block !important;
+  width:135px;
+  left:50%;
+  margin-left:250px;
+  color: #1f3102;
+  }
+  
+  
+
+  /* ==========================================================================
+    11. Responsive styles
+  ========================================================================== */
+  
+  @media (max-width: 991px){
+    .pricing .pricing-item .pricing-item-details {
+        margin-left: 0;
+    }
+  
+    .pricing .pricing-item a img {
+        float: none;
+        margin-bottom: 30px;
+    }
+  }
+  
+  @media (min-width:768px) {
+    .navbar-nav {
+        float:none !important;
+        width:100%;
+        text-align:center;
+        margin-left:9px;
+    }
+    .navbar-nav>li {
+        display:inline-block;
+        float:none;
+    }
+    #logo {
+        position:absolute;
+        z-index: 1;
+        display:block !important;
+        width:135px;
+        left:50%;
+        margin-left:-55px;
+        background:#303a43;
+        -webkit-border-radius:0 0 100% 100%;
+        -moz-border-radius:0 0 100% 100%;
+        border-radius:0 0 100% 100%;
+        padding: 1px;
+    }
+  }
+  
+  @media (max-width:767px) {
+    #header .banner h1 {
+        font-size:60px;
+    }
+    #header .subtitle h4 {
+        font-size: 22px;
+    }
+    .social-bar {
+        text-align: left;
+        margin-top: 30px;
+    }
+  }
+  
+
+  
+/* ==========================================================================
+    Products Page (Bora)
+  ========================================================================== */
+
+  #page3_container {
+    display: flex;
+    flex-direction: column;
+    background-color: #303a43;
+    width: 100vw;
+  }
+  
+  #page3_title{
+    background-image: url(../img/whiskeypour.jpg);
+    width: 100vw;
+    height: 70vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  #prod_intro {
+    text-align: center;
+
+  }
+
+  #prod_intro img {
+    width: 200px;
+  }
+
+  #prod_title {
+    color: #fedfb0;
+    margin-bottom: 30px;
+  }
+
+  #prod_desc {
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+    width: 100vw;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+/*Whiskey Description 1*/
+  #whiskeybg {
+    content: "";
+    background-color: #fedfb0;
+    width: 100vw;
+    height: 70vh;
+    z-index: 0;
+  }
+
+  #whiskeydesc1 {
+    z-index: 1;
+    align-self: center;
+    width: 100vw;
+    padding: 30px;
+  }
+
+  #whiskeyleft {
+    font-size: 30px;
+    top: 120px;
+    text-align: center;
+    font-weight: bold;
+    color: #830e10;
+  }
+
+  #whiskeyleft span{
+    color: #1f3102;
+  }
+
+  #whiskeyright {
+    width: 350px;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .whiskey_taste {
+    border-bottom: 2px dotted #830e10;
+    color: #1f3102;
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+  }
+
+  .whiskey_taste_alcohol {
+    padding-top: 10px;
+  }
+
+  .whiskey_taste_header,
+  .whiskey_taste_alcohol_p {
+    color: #830e10;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .page3_shopbtn {
+    width: 150px;
+    background-color: #830e10;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+  }
+
+  /*Whiskey Description 2*/
+
+  #whiskeydesc2 {
+    background-image: url(../img/rusticwhiskey.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  #whiskeydesc2_title {
+    margin: 180px 0px 50px 0px;
+    font-size: 50px;
+
+  }
+
+  #whiskeydesc2 p {
+    font-size: 20px;
+    line-height: 30px;
+    width: 600px;
+    margin-bottom: 30px;
+
+  }
+
+  /*Whiskey Card*/
+  #page3_cardrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #303a43;
+  }  
+  
+  #page3_card1,
+  #page3_card2,
+  #page3_card3 {
+    padding: 20px;
+    color: white;
+  }
+
+  #page3_card-body1,
+  #page3_card-body2,
+  #page3_card-body3 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+
+/* ==========================================================================
+    Events Page (Bora)
+  ========================================================================== */
+
+  #page4_container {
+    display: flex;
+    flex-direction: column;
+    background-color: #303a43;
+  }
+  
+
+  #page4_header {
+    height: 250px;
+    position: relative;
+    padding-top: 150px;
+    background-color: #303a43;
+  }
+
+
+  #page4_title {
+    text-align: center;
+    width: 100vw;
+  }
+
+  #page4_title h1 {
+    font-size: 90px;
+    color: white;
+  }
+
+/*page4 top contents starts here*/
+
+#page4_colorblock {
+    position: absolute;
+    background-color: #fedfb0;
+    width: 100vw;
+    height: 400px;
+    content: "";
+    top: 520px;
+    z-index: 1;
+}
+
+#page4_contents_1{
+  align-self: center;
+  flex: 1;
+  z-index: 1;
+  top: 300px;
+  margin-top: 100px;
+}
+
+#page4_img_left{
+    background: url(../img/events.jpg) no-repeat;
+    background-size: 150%;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+  }
+
+  #page4_img_left h3 {
+      font-size: 70px;
+      color: white;
+      position: relative;
+      line-height: 90px;
+      left: -8%;
+      top: 32%;
+  }
+
+#page4_img_right{
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  line-height: 30px;
+  float: right;
+  z-index: 1;
+  width: 40vw;
+}
+
+#sketch{
+    width: 300px;
+    height: 300px;
+}
+
+/*page4 mid contents starts here*/
+
+
+#page4_imgblock{
+  background: url(../img/eventsheader.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  font-size: 90px;
+  text-align: center;
+  margin-top: 300px;
+  padding-top: 370px;
+}
+
+#page4_events_desc {
+  margin-top: 50px;
+  padding: 0px 220px 0px 220px;
+  text-align: center;
+  font-size: 30px;
+  color: #fedfb0;
+}
+
+#carousel-example-generic{
+  width: 60vw;
+  top: 50px;
+  margin: auto;
+}
+
+.carousel-caption {
+  font-size: 40px;
+}
+
+
+/*inquiry form*/
+.events_form {
+  margin: auto;
+  width: 60vw;
+  margin-bottom: 60px;
+}
+
+.form_inputs {
+  display: flex;
+}
+
+.form_right {
+  margin-left: auto;
+}
+
+.events_form h1 {
+  margin-top: 70px;
+  font-size: 70px;
+  text-align: center;
+  color: #fedfb0;
+}
+
+.form_item {
+  color: white;
+}
+
+.form_input,
+#event_type {
+  color: gray;
+  width: 350px;
+  height: 40px;
+}
+
+#event_day {
+  width: 100px;
+}
+
+#event_month {
+  width: 150px;
+}
+
+#event_year {
+  width: 100px;
+}
+
+#event_day, #event_month, #event_year,
+#event_type {
+  color: gray;
+  height: 40px;
+}
+
+.form_comments {
+  width: 100%;
+  height: 30vh;
+  color: gray;
+}
+
+.form_actions {
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.page4_button {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #fedfb0;
+  font-size: 25px;
+  color: #830e10;
+}
+
+
+/* ==========================================================================
+    Footer (Bora)
+  ========================================================================== */
+
+
+#footerblock {
+  background-color: #fedfb0;
+  margin: 0;
+  padding-left: 30px;
+  width: 100vw;
+}
+
+#footerimg {
+  width: 30vw;
+}
+
+#address {
+  border-right: 5px dotted #830e10;
+  display: flex;
+  padding-top: 20px;
+}
+
+#addresstext {
+  margin-top: 70px;
+  padding: 10px;
+}
+
+#mapbtn {
+  color: #303a43;
+}
+
+#hours {
+  border-left: 5px dotted #830e10;
+  line-height: 40px; 
+  padding-top: 50px;
+}
+
+#address, #hours {
+  height: 40vh;
+  color: #1f3102;
+  font-size: 20px;
+  margin-top: 50px;
+}
