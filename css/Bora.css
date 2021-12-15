@@ -1,4 +1,4 @@
-@@ -1,667 +0,0 @@
+
 /*
 Website Name: Ridora Whiskey
 Version:    1.0
@@ -123,9 +123,7 @@ TABLE OF CONTENTS
   ========================================================================== */
   #header {
     background-image:url(../img/b5.jpeg);
-    -webkit-background-size:/*@@prefixmycss->No equivalent*/;
     -moz-background-size:cover;
-    -o-background-size:/*@@prefixmycss->No equivalent*/;
     background-size:cover;
     background-position:center center;
     background-attachment:fixed;
