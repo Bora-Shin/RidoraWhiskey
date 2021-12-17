@@ -1,29 +1,26 @@
 /*
-BORA / ROEDER MERGED
+BORA / RICH / ROEDER MERGED
 
 
 Website Name: Ridora Whiskey
-Version:    1.0
-Author:     Roeder, Rich, Bora
+Version:    1.3
+Authors:     Roeder, Rich, Bora
 
 
 TABLE OF CONTENTS
     01 - General and Typography
     02 - Header
     03 - Navigation
-    04 - Services
-    05 - Parallax
-    06 - Ridora Awards
-    07 - Special offers
-    08 - Reservation
-    09 - Ridora Team
-    10 - Footer
-    11 - Responsive styles
+    04 - Parallax
+    05 - Ridora Awards
+    06 - Ridora Team
+    07 - Footer
+    08 - Responsive styles
 */
 
 
 /* ==========================================================================
-    01. General and Typography
+    General and Typography
 ========================================================================== */
 * {
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -31,7 +28,7 @@ TABLE OF CONTENTS
   -webkit-text-size-adjust:100%;
 }
 
-/* Snowflakes Styles */
+/* Snowflakes Styles - credit from https://divilife.com/add-falling-snowflakes-divi-wordpress-website/ */
 body {
  position: relative;
 }
@@ -116,7 +113,7 @@ img {
 }
 
 /* ==========================================================================
-  02. Header
+  Header
 ========================================================================== */
 #header {
   background-image:url(../img/b5.jpeg);
@@ -182,7 +179,7 @@ img {
 
 
 /* ==========================================================================
-  03. Navigation
+  Navigation
 ========================================================================== */
 #menu {
   background:rgba(33,45,57,0.8);
@@ -222,7 +219,7 @@ color: #1f3102;
 
 
   /* ==========================================================================
-    11. Responsive styles
+    Responsive styles
   ========================================================================== */
 
   @media (max-width: 991px){
@@ -277,7 +274,7 @@ color: #1f3102;
 
 
 /* ==========================================================================
-    Products Page (Bora)
+    Products Page
   ========================================================================== */
 
   #page3_container {
@@ -432,7 +429,7 @@ color: #1f3102;
 
 
 /* ==========================================================================
-    Events Page (Bora)
+    Events Page
   ========================================================================== */
 
   #page4_container {
@@ -621,7 +618,7 @@ color: #1f3102;
 
 
 /* ==========================================================================
-    Footer (Bora)
+    Footer
   ========================================================================== */
 
 
@@ -665,7 +662,7 @@ color: #1f3102;
 }
 
 /* ==========================================================================
-    06. Ridora Awards
+    Ridora Awards
 ========================================================================== */
 .menu-items {
   text-align:center;
@@ -696,129 +693,14 @@ color: #1f3102;
   width: 250px;
 }
 
-
 /* ==========================================================================
-  07. Special offers
-========================================================================== */
-.hot-tag {
-  position:absolute;
-  bottom:0;
-  right:0;
-  z-index:15;
-  display:inline-block;
-  width:80px;
-  height:80px;
-  line-height:90px;
-  text-align:center;
-  font-weight:700;
-  color:#fff;
-  -webkit-border-radius:100px;
-  -moz-border-radius:100px;
-  border-radius:100px;
-}
-.br-red {
-  background-color:#ed0121 !important;
-}
-.br-lblue {
-  background-color:#32c8de !important;
-}
-.br-green {
-  background-color:#51d466 !important;
-}
-.pricing {
-  border-top:1px solid #f1f1f1;
-}
-.pricing .pricing-item {
-  position:relative;
-  margin-top:40px;
-  margin-bottom:10px;
-}
-.pricing .pricing-item img {
-  max-width:250px;
-  float:left;
-}
-.pricing-item-details a,.pricing-item-details p,.pricing .lead {
-  color:white;
-  font-weight:bold;
-}
-.pricing .pricing-item .pricing-item-details {
-  margin-left:265px;
-}
-.pricing .pricing-item .pricing-item-details h3 {
-  margin-top:0;
-  margin-bottom:8px;
-  font-size:22px;
-}
-.pricing .pricing-item .pricing-item-details p {
-}
-.pricing .pricing-item .pricing-item-details a.btn {
-  margin-top:10px;
-}
-.pricing .pricing-item .pricing-item-details a.view-link {
-  display:inline-block;
-  margin-top:7px;
-  font-size:12px;
-  border-bottom:1px dotted #aeaeae;
-}
-.pricing .pricing-item .hot-tag {
-  top:0;
-  left:0;
-  margin-top:-15px;
-  margin-left:-15px;
-  width:55px;
-  height:55px;
-  line-height:50px;
-  font-size:23px;
-  font-weight:700;
-  border: 4px solid white;
-}
-
-
-/* ==========================================================================
-  08. Reservation
-========================================================================== */
-.form-group {
-  margin-bottom:24px;
-}
-.form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control {
-  cursor:not-allowed;
-  background-color: transparent;
-}
-.form-control {
-  height:38px;
-  font-size:14px;
-  vertical-align:middle;
-  background-color:transparent;
-  -webkit-border-radius:2px;
-  -webkit-border-radius:2px;
-  -moz-border-radius:2px;
-  border-radius:2px;
-  -webkit-box-shadow:none !important;
-  -moz-box-shadow:none !important;
-  box-shadow:none !important;
-  -webkit-transition:none !important;
-  -moz-transition:none !important;
-  -o-transition:none !important;
-  transition:none !important;
-}
-
-.form p {
-  margin: 10px 0 30px 0;
-}
-
-
-/* ==========================================================================
-  09. Ridora Team Contact Us
+  Ridora Team Contact Us
 ========================================================================== */
 .team img {
   border:5px solid #e7e7e7;
   width: 80%;
   height: 300px;
 }
-
-/* ==========================================================================
-  Contact Us
-========================================================================== */
 
 .contact-wrap {
 width: 80%;
@@ -974,7 +856,7 @@ cursor: pointer;
 
 
 /* ==========================================================================
-    10. Footer  (Roeder)
+    10. Footer 
 ========================================================================== */
 .dark-wrapper {
   background:#1f3102;
@@ -1026,7 +908,7 @@ font-weight: 100;
 
 
 /* ==========================================================================
-    05. parallax (Roeder)
+    Parallax Images
 ========================================================================== */
 .parallax {
   background:url(../img/w1.jpeg) fixed no-repeat center center;
